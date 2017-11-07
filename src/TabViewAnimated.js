@@ -276,6 +276,6 @@ export default class TabViewAnimated<T: Route<*>> extends React.Component<
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    overflow: 'hidden',
+    overflow: 'visible',
   },
 });
