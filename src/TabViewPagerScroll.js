@@ -140,7 +140,7 @@ export default class TabViewPagerScroll<T: Route<*>> extends React.Component<
             testID={navigationState.routes[i].testID}
             style={
               layout.width
-                ? { width: layout.width, overflow: 'hidden' }
+                ? { width: layout.width, overflow: 'visible' }
                 : i === navigationState.index ? styles.page : null
             }
           >
@@ -155,6 +155,7 @@ export default class TabViewPagerScroll<T: Route<*>> extends React.Component<
 const styles = StyleSheet.create({
   container: {
     flexGrow: 1,
+    overflow: 'visible',
   },
 
   page: {
