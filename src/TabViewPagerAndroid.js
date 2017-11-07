@@ -170,6 +170,7 @@ export default class TabViewPagerAndroid<T: Route<*>> extends React.Component<
 const styles = StyleSheet.create({
   container: {
     flexGrow: 1,
+    overflow: 'visible',
   },
 
   page: {
