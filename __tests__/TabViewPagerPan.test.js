@@ -1,6 +1,6 @@
 /* @flow */
 
-import React from 'react';
+import * as React from 'react';
 import { shallow } from 'enzyme';
 import { Animated, View } from 'react-native';
 import TabViewPagerPan from '../src/TabViewPagerPan';
@@ -18,9 +18,10 @@ it('renders all children', () => {
         ],
       }}
       position={new Animated.Value(1)}
-      jumpToIndex={jest.fn()}
-      getLastPosition={jest.fn()}
-      subscribe={jest.fn()}
+      jumpTo={jest.fn()}
+      panX={new Animated.Value(0)}
+      offsetX={new Animated.Value(0)}
+      useNativeDriver={false}
     >
       <View />
       <View />
